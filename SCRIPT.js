@@ -38,28 +38,28 @@ form.addEventListener("submit", function (event) {
 
     // Name
     if (name === "") {
-        showError("name", "Please enter your full name.");
+        showError("name", "Kindly input your full name.");
         valid = false;
     } else if (name.length < 3) {
-        showError("name", "Name must be at least 3 characters long.");
+        showError("name", "The name has be at least 3 characters long.");
         valid = false;
     }
 
     // Email
     if (email === "") {
-        showError("email", "Please enter your email.");
+        showError("email", "Kindly enter your email.");
         valid = false;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showError("email", "Please enter a valid email address.");
+        showError("email", "Kindly enter a valid email address.");
         valid = false;
     }
 
     // Password
     if (password === "") {
-        showError("password", "Please enter a password.");
+        showError("password", "Kindly enter a password.");
         valid = false;
     } else if (password.length < 8) {
-        showError("password", "Password must have at least 8 characters.");
+        showError("password", "Password has to be least 8 characters.");
         valid = false;
     }
 
